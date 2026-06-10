@@ -36,22 +36,24 @@ export function Login() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50"
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
       style={{
-        backgroundImage: `
-          radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-          radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%)
+        background: `
+          linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(240, 249, 255, 0.6) 25%, rgba(255, 255, 255, 0.7) 50%, rgba(243, 232, 255, 0.6) 75%, rgba(220, 198, 224, 0.4) 100%),
+          radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+          radial-gradient(ellipse at 10% 60%, rgba(168, 85, 247, 0.15) 0%, transparent 35%),
+          radial-gradient(ellipse at 70% 70%, rgba(34, 197, 94, 0.08) 0%, transparent 45%)
         `
       }}
     >
-      {/* Background image with overlay */}
+      {/* Decorative elements for visual depth */}
       <div
-        className="absolute inset-0 z-0 opacity-30"
+        className="absolute inset-0 z-0 opacity-40"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a5?auto=format&fit=crop&w=1600&q=80")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundAttachment: 'fixed'
+          backgroundImage: `
+            url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(59,130,246,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>')
+          `,
+          backgroundSize: '40px 40px'
         }}
       ></div>
       
