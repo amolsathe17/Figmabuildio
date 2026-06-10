@@ -62,8 +62,8 @@ export function Login() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-xl mb-4">
             <Building2 className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">WorkForce AI</h1>
-          <p className="text-gray-600 mt-2">AI-Powered Employee Management System</p>
+          <h1 className="text-3xl font-bold text-gray-900">WFH-Figma-Builder-io</h1>
+          <p className="text-gray-600 mt-2">Work From Home Management</p>
         </div>
 
         {/* Login Card */}
@@ -130,9 +130,6 @@ export function Login() {
                   <Button type="submit" className="w-full">
                     Sign In as Employee
                   </Button>
-                  <div className="text-center text-sm text-gray-600 mt-4">
-                    Demo: Use any email and password
-                  </div>
                 </form>
               </TabsContent>
 
@@ -181,9 +178,6 @@ export function Login() {
                   <Button type="submit" className="w-full">
                     Sign In as Admin
                   </Button>
-                  <div className="text-center text-sm text-gray-600 mt-4">
-                    Demo: Use any email and password
-                  </div>
                 </form>
               </TabsContent>
             </Tabs>
@@ -192,8 +186,7 @@ export function Login() {
 
         {/* Footer */}
         <div className="text-center mt-6 text-sm text-gray-600">
-          <p>Protected by enterprise-grade security</p>
-          <p className="mt-2">© 2026 WorkForce AI. All rights reserved.</p>
+          <p className="mt-2">© 2026 WFH-Figma-Builder-io. All rights reserved.</p>
         </div>
       </div>
     </div>
