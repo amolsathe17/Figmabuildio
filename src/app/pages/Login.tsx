@@ -35,15 +35,35 @@ export function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
+    <div
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
+      style={{
+        backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F2d8fd39b8b93450fae3e87688a9fa2d6%2F2660f542d0cc48a894c4bca0d7631172?format=webp&width=800&height=1200')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Overlay with gradient for readability */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: `
+            linear-gradient(135deg, rgba(219, 234, 254, 0.6) 0%, rgba(240, 249, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(243, 232, 255, 0.5) 75%, rgba(220, 198, 224, 0.4) 100%),
+            radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
+            radial-gradient(ellipse at 10% 60%, rgba(168, 85, 247, 0.1) 0%, transparent 35%)
+          `
+        }}
+      ></div>
+      
+      <div className="relative z-10 w-full max-w-md">
         {/* Logo/Header */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-xl mb-4">
             <Building2 className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">WorkForce AI</h1>
-          <p className="text-gray-600 mt-2">AI-Powered Employee Management System</p>
+          <h1 className="text-3xl font-bold text-gray-900">WFH-Figma-Builder-io</h1>
+          <p className="text-gray-600 mt-2">Work From Home Management</p>
         </div>
 
         {/* Login Card */}
@@ -110,9 +130,6 @@ export function Login() {
                   <Button type="submit" className="w-full">
                     Sign In as Employee
                   </Button>
-                  <div className="text-center text-sm text-gray-600 mt-4">
-                    Demo: Use any email and password
-                  </div>
                 </form>
               </TabsContent>
 
@@ -161,9 +178,6 @@ export function Login() {
                   <Button type="submit" className="w-full">
                     Sign In as Admin
                   </Button>
-                  <div className="text-center text-sm text-gray-600 mt-4">
-                    Demo: Use any email and password
-                  </div>
                 </form>
               </TabsContent>
             </Tabs>
@@ -172,8 +186,7 @@ export function Login() {
 
         {/* Footer */}
         <div className="text-center mt-6 text-sm text-gray-600">
-          <p>Protected by enterprise-grade security</p>
-          <p className="mt-2">© 2026 WorkForce AI. All rights reserved.</p>
+          <p className="mt-2">© 2026 WFH-Figma-Builder-io. All rights reserved.</p>
         </div>
       </div>
     </div>
