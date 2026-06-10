@@ -35,8 +35,19 @@ export function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
+    <div 
+      className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a5?w=1600&q=80")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Overlay with gradient and opacity */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 via-white/60 to-purple-50/70 z-0"></div>
+      
+      <div className="relative z-10 w-full max-w-md">
         {/* Logo/Header */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-xl mb-4">
