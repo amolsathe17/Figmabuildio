@@ -38,22 +38,21 @@ export function Login() {
     <div
       className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
       style={{
-        background: `
-          linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(240, 249, 255, 0.6) 25%, rgba(255, 255, 255, 0.7) 50%, rgba(243, 232, 255, 0.6) 75%, rgba(220, 198, 224, 0.4) 100%),
-          radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
-          radial-gradient(ellipse at 10% 60%, rgba(168, 85, 247, 0.15) 0%, transparent 35%),
-          radial-gradient(ellipse at 70% 70%, rgba(34, 197, 94, 0.08) 0%, transparent 45%)
-        `
+        backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F2d8fd39b8b93450fae3e87688a9fa2d6%2F2660f542d0cc48a894c4bca0d7631172?format=webp&width=800&height=1200')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
       }}
     >
-      {/* Decorative elements for visual depth */}
+      {/* Overlay with gradient for readability */}
       <div
-        className="absolute inset-0 z-0 opacity-40"
+        className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `
-            url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(59,130,246,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>')
-          `,
-          backgroundSize: '40px 40px'
+          background: `
+            linear-gradient(135deg, rgba(219, 234, 254, 0.6) 0%, rgba(240, 249, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(243, 232, 255, 0.5) 75%, rgba(220, 198, 224, 0.4) 100%),
+            radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
+            radial-gradient(ellipse at 10% 60%, rgba(168, 85, 247, 0.1) 0%, transparent 35%)
+          `
         }}
       ></div>
       
